@@ -30,25 +30,30 @@ The **Smart City GHG Emissions Dashboard** is a cutting-edge tool that uses **In
 
 ![Screenshot from 2024-10-07 19-06-50](https://github.com/user-attachments/assets/b20c12b9-d0eb-4332-b98f-47a7754ff0a4)
 
--This is the Main page or Landing page of our website.
+-This is the Main page or Landing page of our website "SMART CITY DASHBOARD"
 
 ![Screenshot from 2024-10-07 19-07-15](https://github.com/user-attachments/assets/df575051-1648-46b9-81b8-242d88e4d77f)
 
 ![Screenshot from 2024-10-07 19-10-56](https://github.com/user-attachments/assets/febba54c-d21a-4d37-a524-5e452f1c0b8b)
 
--This is the pie chart for the GHG emissions.
+-This is the pie chart for the GHG emissions, highlighting the main gases—like Carbon Dioxide (CO2), Methane (CH4), and Nitrous Oxide (N2O)—along with their percentages (e.g., CO2 at 70%).
 
 ![Screenshot from 2024-10-07 19-10-40](https://github.com/user-attachments/assets/701966df-c847-4792-bb13-89713e26e8cb)
 ![Screenshot from 2024-10-07 19-10-29](https://github.com/user-attachments/assets/d7f2e777-0abb-49a0-a062-216f47dcf9fa)
 
--This is CO2 emission stats.
+-Total Emissions: Annually, over 36 billion metric tons of CO2 are released, primarily from fossil fuels, industrial processes, and land-use changes.
+-Major Contributors: China, the U.S., and the EU are the top emitters, with China accounting for about 28% of global emissions.
+-Trends: Global CO2 emissions have risen gradually due to industrialization, population growth, and increasing energy consumption, despite efforts to reduce them.
+## CO2 Emissions in India
+-Total Emissions: India is the third-largest emitter, contributing around 7% of global emissions (over 2.5 billion metric tons annually).
+-Sector Breakdown: The energy sector, particularly coal-fired plants, is the main source, followed by transportation, agriculture, and industry.
+-Growth Rate: Emissions are rising due to rapid urbanization and economic growth, highlighting the need for effective reduction policies.
 
 ![Screenshot from 2024-10-07 19-44-03](https://github.com/user-attachments/assets/aac6e867-05e8-4f75-a16e-c33df807db01)
 
--This is the Map.
+-We use MapBox to visualize Carbon Dioxide, Methane, and Nitrous Oxide emissions across regions. It generates interactive maps that help city planners and policymakers understand the distribution of greenhouse gases, enabling informed decisions for emission control and climate strategies.
 
 ---
-
 
 ## AI Integration
 
