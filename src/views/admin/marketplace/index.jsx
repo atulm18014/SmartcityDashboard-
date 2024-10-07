@@ -1,83 +1,41 @@
-import React, { useRef } from 'react';
-import { IgrGeographicMapModule, IgrGeographicMap, IgrGeographicShapeSeries } from 'igniteui-react-maps';
-import { IgrDataChartInteractivityModule } from 'igniteui-react-charts';
+import React, { useEffect, useRef } from 'react';
+import mapboxgl from 'mapbox-gl';
+import 'mapbox-gl/dist/mapbox-gl.css'; // Import Mapbox styles
+import { Box, useColorModeValue } from "@chakra-ui/react";
 
-// Register the necessary modules
-IgrGeographicMapModule.register();
-IgrDataChartInteractivityModule.register();
-
-const shapesData = [
-  {
-    name: "Polygon1",
-    shape: [
-      { latitude: 37.7749, longitude: -122.4194 }, // San Francisco
-      { latitude: 34.0522, longitude: -118.2437 }, // Los Angeles
-      { latitude: 36.7783, longitude: -119.4179 }, // California
-      { latitude: 37.7749, longitude: -122.4194 }  // Closing the polygon
-    ],
-    fill: "#FF0000",  // Red fill color
-  },
-  {
-    name: "Polygon2",
-    shape: [
-      { latitude: 40.7128, longitude: -74.0060 }, // New York
-      { latitude: 39.7392, longitude: -104.9903 }, // Denver
-      { latitude: 38.2527, longitude: -85.7585 }, // Louisville
-      { latitude: 40.7128, longitude: -74.0060 }  // Closing the polygon
-    ],
-    fill: "#0000FF",  // Blue fill color
-  }
-];
+// Set your Mapbox access token
+mapboxgl.accessToken = 'pk.eyJ1IjoibXJjaGVlc2UyMyIsImEiOiJjbTFqbGl5b2YwYnl6MmpzZWYyYWtjYnhsIn0.-NMoLX7OlT_LAsuzQRTZSg';
 
 export default function Marketplace() {
-  const mapRef = useRef(null);
+  const mapContainerRef = useRef(null);
+  
+  useEffect(() => {
+    // Initialize Mapbox
+    const map = new mapboxgl.Map({
+      container: mapContainerRef.current, // Container ID
+      style: 'mapbox://styles/mrcheese23/cm1lanc25005501pl4k99gjgm', // Stylesheet location
+      center: [30, 15], // Starting position [lng, lat]
+      zoom: 1, // Starting zoom
+    });
 
-  // Handle zoom level restrictions
-  const handleWindowRectChanged = (event) => {
-    const map = mapRef.current;
+    // Add navigation controls to the map
+    map.addControl(new mapboxgl.NavigationControl(), 'top-right');
+    
+    // Cleanup on unmount
+    return () => map.remove();
+  }, []); // Only run on first render
 
-    if (map) {
-      let { left, top, width, height } = map.windowRect;
-
-      const minZoom = 0.05;   // Maximum zoom-in level
-      const maxZoomOut = 0.4; // Maximum zoom-out level
-
-      // Restrict zoom-in and zoom-out levels
-      if (width < minZoom) width = minZoom;
-      if (width > maxZoomOut) width = maxZoomOut;
-      if (height < minZoom) height = minZoom;
-      if (height > maxZoomOut) height = maxZoomOut;
-
-      // Update the map's zoom level
-      map.windowRect = { left, top, width, height };
-    }
-  };
+  const textColor = useColorModeValue("secondaryGray.900", "white");
+  const textColorBrand = useColorModeValue("brand.500", "white");
 
   return (
-    <div 
-      style={{
-        height: "100%", 
-        width: "100%", 
-        marginTop: "50px", 
-        borderRadius: "30px",   // Apply border radius
-        overflow: "hidden",     // Ensure map respects the border radius
-      }}
-    >
-      <IgrGeographicMap
-        ref={mapRef}
-        width="1600px"
-        height="800px"
-        zoomable={true}
-        windowRect={{ left: 0, top: 0, width: 0.4, height: 0.4 }} // Initial zoom level
-        windowRectChanged={handleWindowRectChanged}               // Event handler for zoom boundaries
-      >
-        <IgrGeographicShapeSeries
-          name="shapes"
-          dataSource={shapesData}
-          shapeMemberPath="shape"
-          fillMemberPath="fill"
-        />
-      </IgrGeographicMap>
-    </div>
+    <Box
+      ref={mapContainerRef}
+      w="100%"
+      h="800px"
+      borderRadius="20px"
+      bg="white"
+      mt="80px"
+    />
   );
 }
