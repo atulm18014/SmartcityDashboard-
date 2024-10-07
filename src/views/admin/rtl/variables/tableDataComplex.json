@@ -1,26 +1,3 @@
-[
-  {
-    "name":"Horizon UI PRO",
-    "status": "Approved",
-    "date": "18 Apr 2022",
-    "progress": 75.5  
-  },
-  {
-    "name":"Horizon UI Free",
-    "status": "Disable",
-    "date": "18 Apr 2022",
-    "progress": 25.5  
-  },
-  {
-    "name":"Marketplace",
-    "status": "Error",
-    "date": "20 May 2021",
-    "progress": 90  
-  },
-  {
-    "name":"Weekly Updates",
-    "status": "Approved",
-    "date": "12 Jul 2021",
-    "progress": 50.5  
-  }
-]
+version https://git-lfs.github.com/spec/v1
+oid sha256:274e80c4238214885ca65e5c520aaf01e8dca4931ecc6014431963b242dd78d6
+size 451

@@ -1,22 +1,3 @@
-[
-   
-    {"year": 2000, "co2Data": 4652.377},
-    {"year": 2001, "co2Data": 4720.366},
-    {"year": 2002, "co2Data": 4853.696},
-    {"year": 2003, "co2Data": 5027.045},
-    {"year": 2004, "co2Data": 5272.497},
-    {"year": 2005, "co2Data": 5381.51},
-    {"year": 2006, "co2Data": 5523.923},
-    {"year": 2007, "co2Data": 5657.599},
-    {"year": 2008, "co2Data": 5833.553},
-    {"year": 2009, "co2Data": 5858.725},
-    {"year": 2010, "co2Data": 6147.623},
-    {"year": 2011, "co2Data": 6382.878},
-    {"year": 2012, "co2Data": 6666.948},
-    {"year": 2013, "co2Data": 6589.503},
-    {"year": 2014, "co2Data": 6683.825},
-    {"year": 2015, "co2Data": 6845.314},
-    {"year": 2016, "co2Data": 7013.987},
-    {"year": 2017, "co2Data": 7177.142},
-    {"year": 2018, "co2Data": 7355.314}
-]
+version https://git-lfs.github.com/spec/v1
+oid sha256:4973ecda3d002510cd6b8c48719a07e9aa7a97901864fa2d76df9d218082b224
+size 785
