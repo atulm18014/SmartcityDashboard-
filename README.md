@@ -51,6 +51,8 @@ The **Smart City GHG Emissions Dashboard** is a cutting-edge tool that uses **In
 
 ![Screenshot from 2024-10-07 19-44-03](https://github.com/user-attachments/assets/aac6e867-05e8-4f75-a16e-c33df807db01)
 
+![Screenshot from 2024-10-07 20-21-59](https://github.com/user-attachments/assets/f1fd0c10-e9a3-4f62-8406-3d98ccbc04f8)
+
 -We use MapBox to visualize Carbon Dioxide, Methane, and Nitrous Oxide emissions across regions. It generates interactive maps that help city planners and policymakers understand the distribution of greenhouse gases, enabling informed decisions for emission control and climate strategies.
 
 ---
