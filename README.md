@@ -1,4 +1,4 @@
-# Smart City Greenhouse Gas (GHG) Emissions Dashboard
+[ghg2_with_insights.csv](https://github.com/user-attachments/files/17372583/ghg2_with_insights.csv)# Smart City Greenhouse Gas (GHG) Emissions Dashboard
 
 ## Problem Statement
 
@@ -74,13 +74,13 @@ We use MapBox to visualize Carbon Dioxide, Methane, and Nitrous Oxide emissions 
 - **Intel DAAL**: Handles big data processing for fast clustering.
 - **OpenVINO**: Enables real-time inference for AI models.
 
----
+
 
 ## Technical Architecture
 
 ### Datasets:
 - Primary datasets are sourced from urban traffic, industrial, and weather data.
-- Dataset used: ** owid-co2-data.csv **
+- Dataset used: ** ghg2_with_insights.csv **
 - Additional datasets from public sources and environmental monitoring systems are also integrated.
 
 ### Technology Stack:
