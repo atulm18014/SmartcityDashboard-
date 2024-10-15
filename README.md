@@ -40,6 +40,10 @@ This is the pie chart for the GHG emissions, highlighting the main gases—like 
 
 ![Screenshot from 2024-10-07 19-10-40](https://github.com/user-attachments/assets/701966df-c847-4792-bb13-89713e26e8cb)
 ![Screenshot from 2024-10-07 19-10-29](https://github.com/user-attachments/assets/d7f2e777-0abb-49a0-a062-216f47dcf9fa)
+![image](https://github.com/user-attachments/assets/9894f499-ac2a-4448-8f9e-226356280560)
+![Screenshot from 2024-10-15 09-54-31](https://github.com/user-attachments/assets/c2cb1f48-2ab9-4d01-b9cb-3833934704d6)
+
+
 
 Total Emissions: Annually, over 36 billion metric tons of CO2 are released, primarily from fossil fuels, industrial processes, and land-use changes.
 Major Contributors: China, the U.S., and the EU are the top emitters, with China accounting for about 28% of global emissions.
