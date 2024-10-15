@@ -1,5 +1,3 @@
-[ghg2_with_insights.csv](https://github.com/user-attachments/files/17372583/ghg2_with_insights.csv)# Smart City Greenhouse Gas (GHG) Emissions Dashboard
-
 ## Problem Statement
 
 As cities grow, **Greenhouse Gas (GHG) emissions** increase due to industrial activities, traffic congestion, and high energy consumption. These emissions drive climate change, impacting urban environments with rising temperatures, poor air quality, and increased vulnerability to extreme weather. With cities contributing over **70% of global GHG emissions**, addressing them is essential to creating sustainable cities and meeting global climate goals, such as the Paris Agreement’s 1.5°C target.
